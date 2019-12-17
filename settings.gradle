@@ -1,0 +1,2 @@
+include ':app', ':Domain', ':presentation', ':repository'
+rootProject.name='MarsRobots'

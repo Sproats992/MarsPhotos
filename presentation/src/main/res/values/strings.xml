@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">presentation</string>
+
+    <string name="mars_robots_home">MarsRobots</string>
+    <string name="mars_robots_detail">MarsRobots Detail</string>
+
+    <string name="home_please_wait">Please wait, downloading data</string>
+
+    <string name="date_created">Date created: %1s</string>
+
+    <string name="photo_credit">Photo credit: %1s</string>
+</resources>
