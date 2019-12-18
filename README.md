@@ -4,7 +4,7 @@ This Android app was created as part of a technical test for a job opportunity a
 
 It fetches a list of Mars (the planet) related articles from NASA (via endpoint: https://images-api.nasa.gov/search?q=mars&media_type=image ) and displays a parent list of articles and allows the user to click on an article to reveal a more detailed photograph and any descriptive text that is available.
 
-This endpoint is has a very rich data return, really too rich for a mobile application (IMHO). If this was a commercial proposition I would look at reducing the complexity of the data sent to the app by adding an intermediary back-end microservice, removing unused parts and tailoring returns to suit particlar functional areas of the mobile app, though the feed is used directly for demo purposes.
+This endpoint has a very rich data return, really too rich for a mobile application (IMHO). If this was a commercial proposition I would look at reducing the complexity of the data sent to the app by adding an intermediary back-end microservice, removing unused parts and tailoring returns to suit particlar functional areas of the mobile app, though the feed is used directly for demo purposes.
 
 This codebase reuses an MVVM and Clear Architecture template pattern I have used for several demo projects.
 
@@ -49,7 +49,7 @@ Two methods of intercepting LiveData are provided, using the observeForever meth
 * Presentation software structure is based on MVVM using Android ViewModels.
 * Networking and Internet access uses Retrofit2.
 * Data is persisted using the Android Room database using Coroutine interfacing.
-* Images are loaded and persistent by Picasso.
+* Images are loaded and cached by Picasso.
 
 
 # TODOs.
