@@ -6,7 +6,7 @@ It fetches a list of Mars (the planet) related articles from NASA (via endpoint:
 
 This endpoint has a very rich data return, really too rich for a mobile application (IMHO). If this was a commercial proposition I would look at reducing the complexity of the data sent to the app by adding an intermediary back-end microservice, removing unused parts and tailoring returns to suit particlar functional areas of the mobile app, though the feed is used directly for demo purposes.
 
-This codebase reuses an MVVM and Clear Architecture template pattern I have used for several demo projects.
+This codebase reuses an MVVM and Clean Architecture template pattern I have used for several demo projects.
 
 
 # Software Architecture
