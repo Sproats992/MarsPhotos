@@ -13,7 +13,7 @@ This codebase reuses an MVVM and Clear Architecture template pattern I have used
 
 The architecture employed attempts to align with the latest Android architectural patterns (Jetpack) and incorporate strong Clean Architecture (Robert C. Martin type) in the software design. Reactive streaming for data passing is achieved using a combination of Android LiveData, Kotlin Coroutines and Kotlin Flow.
 
-To that end, the app is modular and employs seperate Presentaton/UI feature modules (presentation), a repository module to contain data and network requests and Domain module defining entities and usecases. In line with Clean Architecture the Domain module is completely platform independent and is isolated by the Gradle dependencies which contain no references to the Android target platform.
+To that end, the app is modular and employs separate Presentaton/UI feature modules (presentation), a repository module to contain data and network requests and Domain module defining entities and usecases. In line with Clean Architecture the Domain module is completely platform independent and is isolated by the Gradle dependencies which contain no references to the Android target platform.
 
 The presentation modules incorporates a Model, View, ViewModel (MVVM) structure.
 
