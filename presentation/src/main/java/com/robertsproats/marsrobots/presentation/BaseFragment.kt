@@ -1,7 +1,7 @@
 package com.robertsproats.marsrobots.presentation
 
-import androidx.fragment.app.Fragment
+import dagger.android.support.DaggerFragment
 
-abstract class BaseFragment : Fragment() {
+abstract class BaseFragment : DaggerFragment() {
 
 }

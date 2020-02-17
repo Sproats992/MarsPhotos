@@ -1,6 +1,5 @@
 package com.robertsproats.marsrobots.presentation.features.home
 
-import android.content.Context
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -15,7 +14,6 @@ import com.robertsproats.marsrobots.presentation.BaseFragment
 import com.robertsproats.marsrobots.presentation.R
 import com.robertsproats.marsrobots.presentation.features.detail.MarsRobotsDetailFragment.Companion.BundleDetailIndexKey
 import com.robertsproats.marsrobots.presentation.model.PresentationSimpleMarsRobotsItem
-import dagger.android.support.AndroidSupportInjection
 import kotlinx.android.synthetic.main.marsrobots_home_layout.*
 import javax.inject.Inject
 
@@ -27,11 +25,6 @@ class MarsRobotsFragment @Inject constructor() : BaseFragment(), MarsRobotsDetai
     private lateinit var viewModel: MarsRobotsViewModel
 
     private var marsRobotsListAdapter: MarsRobotsListAdapter? = null
-
-    override fun onAttach(context: Context) {
-        AndroidSupportInjection.inject(this)
-        super.onAttach(context)
-    }
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?,
                               savedInstanceState: Bundle?): View {

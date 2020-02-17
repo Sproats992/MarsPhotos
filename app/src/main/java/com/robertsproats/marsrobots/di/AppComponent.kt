@@ -1,24 +1,24 @@
 package com.robertsproats.marsrobots.di
 
-import com.robertsproats.marsrobots.MainActivity
 import com.robertsproats.marsrobots.presentation.di.PresentationModule
 import com.robertsproats.marsrobots.repository.di.RepositoryModule
 import dagger.Component
-import dagger.android.AndroidInjectionModule
+import dagger.android.AndroidInjector
+import dagger.android.support.AndroidSupportInjectionModule
 import javax.inject.Singleton
 
 @Component(modules = [
-    AndroidInjectionModule::class,
+    AndroidSupportInjectionModule::class,
+    AndroidInjectBuilder::class,
     AppModule::class,
     PresentationModule::class,
     DomainModule::class,
     RepositoryModule::class
 ])
 @Singleton
-interface AppComponent {
+interface AppComponent : AndroidInjector<MarsRobotsApplication> {
 
-    fun inject(application: MarsRobotsApplication)
-
-    fun inject(mainActivity: MainActivity)
+    @Component.Factory
+    interface Factory : AndroidInjector.Factory<MarsRobotsApplication>
 
 }
